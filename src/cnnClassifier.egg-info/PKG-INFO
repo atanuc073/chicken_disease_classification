@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/atanuc073/chicken_disease_classification
+Author: atanuc073
+Author-email: atanuc073@gmail.com
+Project-URL: Bug Tracker, https://github.com/atanuc073/chicken_disease_classification/issues
+
+# chicken_disease_classification
