@@ -2,7 +2,8 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://drive.google.com/file/d/1GmVNmiS_oBTBU5LJjrXcIpnlHaseyUtB/view?usp=sharing
-  local_data_file: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
+  kaggle_data : allandclive/chicken-disease-1
+  local_data_file: artifacts/data_ingestion/
+  unzip_dir: artifacts/data_ingestion/
+  kaggle_path : C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\.kaggle
 

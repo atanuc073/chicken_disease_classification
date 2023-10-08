@@ -1,0 +1,98 @@
+[2023-10-09 02:42:13,089 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-09 02:42:13,090 : ERROR : main : [Errno 2] No such file or directory: '..\\config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\config\configuration.py", line 11, in __init__
+    self.config=read_yaml(config_filepath)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise e
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 28, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: '..\\config\\config.yaml'
+[2023-10-09 02:43:44,127 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-09 02:43:44,127 : ERROR : main : [Errno 2] No such file or directory: '..\\..\\..\\config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\config\configuration.py", line 11, in __init__
+    self.config=read_yaml(config_filepath)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise e
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 28, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: '..\\..\\..\\config\\config.yaml'
+[2023-10-09 02:44:54,310 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-09 02:44:54,311 : ERROR : main : [Errno 2] No such file or directory: '..\\..\\config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\config\configuration.py", line 11, in __init__
+    self.config=read_yaml(config_filepath)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise e
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 28, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: '..\\..\\config\\config.yaml'
+[2023-10-09 02:47:47,391 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-09 02:47:47,391 : ERROR : main : [Errno 2] No such file or directory: '\\config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\config\configuration.py", line 11, in __init__
+    self.config=read_yaml(config_filepath)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise e
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 28, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: '\\config\\config.yaml'
+[2023-10-09 02:48:03,042 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-09 02:48:03,042 : ERROR : main : [Errno 2] No such file or directory: '..\\config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\config\configuration.py", line 11, in __init__
+    self.config=read_yaml(config_filepath)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise e
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\utils\common.py", line 28, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: '..\\config\\config.yaml'
+[2023-10-09 02:48:20,020 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-09 02:48:20,021 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-10-09 02:48:20,022 : INFO : common : created directory at: artifacts]
+[2023-10-09 02:48:20,022 : INFO : common : created directory at: ../artifacts/data_ingestion]
+[2023-10-09 02:49:35,802 : INFO : data_ingestion : allandclive/chicken-disease-1 downloaded ! ]
+[2023-10-09 02:49:39,790 : INFO : data_ingestion : file has been successfully exxtracted .]
+[2023-10-09 02:49:39,791 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-09 02:50:57,409 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-09 02:50:57,410 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-10-09 02:50:57,410 : INFO : common : created directory at: artifacts]
+[2023-10-09 02:50:57,411 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-10-09 02:52:18,167 : INFO : data_ingestion : allandclive/chicken-disease-1 downloaded ! ]
+[2023-10-09 02:52:22,669 : INFO : data_ingestion : file has been successfully exxtracted .]
+[2023-10-09 02:52:22,671 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
