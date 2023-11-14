@@ -7,6 +7,16 @@ data_ingestion:
   unzip_dir: artifacts/data_ingestion/
   kaggle_path : C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\.kaggle
 
+data_structure:
+  unprocessed_data : artifacts/data_ingestion
+  processed_data : artifacts/processed_data
+  train_folder_sal : artifacts/processed_data/train/Salmonella
+  test_folder_sal : artifacts/processed_data/test/Salmonella
+  train_folder_cocc : artifacts/processed_data/train/Coccidiosis
+  test_folder_cocc : artifacts/processed_data/test/Coccidiosis
+
+
+
 
 prepare_base_model: 
   root_dir : artifacts/prepare_base_model
