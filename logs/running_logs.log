@@ -156,3 +156,199 @@ x==========x]
 [2023-11-14 14:59:21,469 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
 
 X=================X]
+[2023-12-01 17:50:50,217 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 17:50:50,219 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 17:50:50,220 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 17:50:50,221 : INFO : common : created directory at: artifacts]
+[2023-12-01 17:50:50,221 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 17:50:50,871 : INFO : data_ingestion : allandclive/chicken-disease-1 downloaded ! ]
+[2023-12-01 17:50:50,871 : INFO : data_ingestion : there is some error while extracting the files]
+[2023-12-01 17:50:50,871 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-01 17:50:50,871 : INFO : main : ***********************]
+[2023-12-01 17:50:50,871 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-01 17:50:50,873 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 17:50:50,874 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 17:50:50,874 : INFO : common : created directory at: artifacts]
+[2023-12-01 17:50:50,875 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-01 17:50:56,116 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-01 17:50:56,813 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-01 17:50:57,273 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-01 17:50:57,427 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-01 17:53:35,224 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 17:53:35,228 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 17:53:35,229 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 17:53:35,229 : INFO : common : created directory at: artifacts]
+[2023-12-01 17:53:35,229 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 17:53:35,511 : INFO : data_ingestion : allandclive/chicken-disease-1 downloaded ! ]
+[2023-12-01 17:53:35,511 : INFO : data_ingestion : there is some error while extracting the files]
+[2023-12-01 17:53:35,511 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-01 17:53:35,512 : INFO : main : ***********************]
+[2023-12-01 17:53:35,512 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-01 17:53:35,514 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 17:53:35,515 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 17:53:35,515 : INFO : common : created directory at: artifacts]
+[2023-12-01 17:53:35,515 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-01 17:53:36,619 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-01 17:53:37,325 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-01 17:53:37,785 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-01 17:53:37,930 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-01 17:55:45,929 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 17:55:45,932 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 17:55:45,933 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 17:55:45,933 : INFO : common : created directory at: artifacts]
+[2023-12-01 17:55:45,933 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 17:55:46,188 : INFO : data_ingestion : allandclive/chicken-disease-1 downloaded ! ]
+[2023-12-01 17:55:46,188 : INFO : data_ingestion : there is some error while extracting the files]
+[2023-12-01 17:55:46,189 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-01 17:55:46,189 : INFO : main : ***********************]
+[2023-12-01 17:55:46,189 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-01 17:55:46,191 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 17:55:46,192 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 17:55:46,192 : INFO : common : created directory at: artifacts]
+[2023-12-01 17:55:46,192 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-01 17:55:46,952 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-01 17:55:47,650 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-01 17:55:48,104 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-01 17:55:48,275 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-01 17:56:09,619 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 17:56:09,621 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 17:56:09,622 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 17:56:09,622 : INFO : common : created directory at: artifacts]
+[2023-12-01 17:56:09,622 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 17:56:09,871 : INFO : data_ingestion : allandclive/chicken-disease-1 downloaded ! ]
+[2023-12-01 17:56:09,871 : INFO : data_ingestion : there is some error while extracting the files]
+[2023-12-01 17:56:09,872 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-01 17:56:09,872 : INFO : main : ***********************]
+[2023-12-01 17:56:09,872 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-01 17:56:09,874 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 17:56:09,875 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 17:56:09,875 : INFO : common : created directory at: artifacts]
+[2023-12-01 17:56:09,876 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-01 17:56:10,657 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-01 17:56:11,342 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-01 17:56:11,803 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-01 17:56:11,964 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-01 18:08:36,449 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 18:08:36,452 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 18:08:36,453 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 18:08:36,453 : INFO : common : created directory at: artifacts]
+[2023-12-01 18:08:36,453 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 18:09:52,423 : INFO : data_ingestion : allandclive/chicken-disease-1 downloaded ! ]
+[2023-12-01 18:09:56,902 : INFO : data_ingestion : file has been successfully exxtracted .]
+[2023-12-01 18:09:56,903 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-01 18:09:56,904 : INFO : main : ***********************]
+[2023-12-01 18:09:56,904 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-01 18:09:56,906 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 18:09:56,907 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 18:09:56,907 : INFO : common : created directory at: artifacts]
+[2023-12-01 18:09:56,907 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-01 18:09:57,749 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-01 18:09:58,621 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-01 18:09:59,045 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-01 18:09:59,234 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-01 19:42:09,331 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 19:42:09,334 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 19:42:09,334 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 19:42:09,335 : INFO : common : created directory at: artifacts]
+[2023-12-01 19:42:09,335 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 19:42:09,335 : ERROR : main : Argument path of type <class 'str'> to <function get_size at 0x00000133FF90A1F0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\components\data_ingestion.py", line 34, in download_file
+    logger.info(f"The file is already exists of size : {get_size(data_name)}")
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 845, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path of type <class 'str'> to <function get_size at 0x00000133FF90A1F0> does not match annotation type <class 'pathlib.Path'>
+[2023-12-01 19:44:54,620 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 19:44:54,622 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 19:44:54,623 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 19:44:54,623 : INFO : common : created directory at: artifacts]
+[2023-12-01 19:44:54,624 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 19:44:54,624 : ERROR : main : Argument path of type <class 'str'> to <function get_size at 0x0000020ADDF1A1F0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\components\data_ingestion.py", line 34, in download_file
+    logger.info(f"The file is already exists of size : {get_size(data_name)}")
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 845, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path of type <class 'str'> to <function get_size at 0x0000020ADDF1A1F0> does not match annotation type <class 'pathlib.Path'>
+[2023-12-01 19:47:31,447 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 19:47:31,449 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 19:47:31,450 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 19:47:31,451 : INFO : common : created directory at: artifacts]
+[2023-12-01 19:47:31,451 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 19:48:50,133 : INFO : data_ingestion : allandclive/chicken-disease-1 downloaded ! ]
+[2023-12-01 19:48:59,246 : INFO : data_ingestion : there is some error while extracting the files]
+[2023-12-01 19:48:59,266 : ERROR : main : listdir: path should be string, bytes, os.PathLike or None, not DataIngestion]
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 20, in main
+    data_ingestion.process_data()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\components\data_ingestion.py", line 50, in process_data
+    for l in tqdm(os.listdir(images_des)):
+TypeError: listdir: path should be string, bytes, os.PathLike or None, not DataIngestion
+[2023-12-01 19:55:58,244 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 19:55:58,260 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 19:55:58,260 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 19:55:58,260 : INFO : common : created directory at: artifacts]
+[2023-12-01 19:55:58,260 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 19:55:58,265 : ERROR : main : Argument path of type <class 'str'> to <function get_size at 0x00000298FD0B91F0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\components\data_ingestion.py", line 34, in download_file
+    logger.info(f"The file is already exists of size : {get_size(data_name)}")
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 845, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path of type <class 'str'> to <function get_size at 0x00000298FD0B91F0> does not match annotation type <class 'pathlib.Path'>
+[2023-12-01 19:57:36,996 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-01 19:57:37,011 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 19:57:37,011 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 19:57:37,011 : INFO : common : created directory at: artifacts]
+[2023-12-01 19:57:37,011 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-01 19:57:37,011 : INFO : data_ingestion : The file is already exists of size :]
+[2023-12-01 19:57:43,665 : INFO : data_ingestion : there is some error while extracting the files]
+[2023-12-01 19:57:56,217 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-01 19:57:56,217 : INFO : main : ***********************]
+[2023-12-01 19:57:56,217 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-01 19:57:56,217 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-01 19:57:56,232 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-01 19:57:56,232 : INFO : common : created directory at: artifacts]
+[2023-12-01 19:57:56,232 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-01 19:57:56,943 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-01 19:57:58,706 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-01 19:57:59,487 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-01 19:57:59,738 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
