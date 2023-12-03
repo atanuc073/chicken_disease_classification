@@ -47,13 +47,13 @@ class DataIngestion:
 
     def process_data(self,images_des="artifacts\data_ingestion\Train\\",data_des="artifacts\Processed_data\\"):
 
-        split="train\\"
+        split="training\\"
         for l in tqdm(os.listdir(images_des)):
             clas=l.split(".")[0]
             if random.random()<0.8:
-                split="train\\"
+                split="training\\"
             else:
-                split="test\\"
+                split="validation\\"
             copy_des=data_des+split+clas
 
 
