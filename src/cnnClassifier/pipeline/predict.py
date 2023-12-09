@@ -6,9 +6,6 @@ from PIL import Image
 import numpy as np
 import tensorflow as tf
 
-
-
-
 class PredictionPipeline :
     def __init__(self,filename):
         self.filename=filename
@@ -53,8 +50,6 @@ class PredictionPipeline :
         elif result[0] == 7:
             prediction = 'SALMO'
 
-
-        
         return [{ "image" : prediction}]
 
 
