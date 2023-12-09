@@ -855,3 +855,293 @@ X=================X]
 [2023-12-07 21:24:02,345 : INFO : main : >>>>>>>> stage Training completed <<<<<<<<<<<<<<
 
 x========x]
+[2023-12-09 12:53:26,649 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-09 12:53:26,653 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 12:53:26,657 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 12:53:26,657 : INFO : common : created directory at: artifacts]
+[2023-12-09 12:53:26,657 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-09 12:53:26,661 : INFO : data_ingestion : The file is already exists of size :]
+[2023-12-09 12:53:33,818 : INFO : data_ingestion : file has been successfully exxtracted .]
+[2023-12-09 12:53:38,452 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-09 12:53:38,452 : INFO : main : ***********************]
+[2023-12-09 12:53:38,452 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-09 12:53:38,456 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 12:53:38,456 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 12:53:38,456 : INFO : common : created directory at: artifacts]
+[2023-12-09 12:53:38,456 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-09 12:53:48,795 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-09 12:53:50,248 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-09 12:53:50,949 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-09 12:53:51,199 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-09 12:53:51,199 : INFO : main : ******************]
+[2023-12-09 12:53:51,199 : INFO : main : >>>>>>>> stage Training started <<<<<<<]
+[2023-12-09 12:53:51,203 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 12:53:51,203 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 12:53:51,203 : INFO : common : created directory at: artifacts]
+[2023-12-09 12:53:51,207 : INFO : common : created directory at: \artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-09 12:53:51,207 : INFO : common : created directory at: \artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-09 12:53:51,207 : INFO : common : created directory at: artifacts\training]
+[2023-12-09 13:00:49,120 : INFO : main : >>>>>>>> stage Training completed <<<<<<<<<<<<<<
+
+x========x]
+[2023-12-09 13:02:41,336 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-09 13:02:41,337 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-09 13:02:58,393 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:02:58] "GET / HTTP/1.1" 200 -]
+[2023-12-09 13:03:29,899 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:03:29] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:04:25,626 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:04:25] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:04:47,221 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:04:47] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:05:03,112 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:05:03] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:05:14,078 : WARNING : def_function : 5 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002468DA8C310> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-09 13:05:14,365 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:05:14] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:05:27,226 : WARNING : def_function : 6 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002468DA8C550> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-09 13:05:27,512 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:05:27] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:05:39,930 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:05:39] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:05:52,105 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:05:52] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:06:29,661 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:06:29] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:06:37,787 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:06:37] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:06:51,706 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:06:51] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:07:05,086 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:07:05] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:07:15,287 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:07:15] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:07:26,304 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:07:26] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:07:37,671 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:07:37] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:07:55,085 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:07:55] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:08:02,362 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:08:02] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:08:56,980 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:08:56] "GET / HTTP/1.1" 200 -]
+[2023-12-09 13:09:10,536 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:09:10] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:09:17,673 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:09:17] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:09:27,135 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:09:27] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:09:39,331 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:09:39] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:09:53,617 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:09:53] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:10:00,326 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:10:00] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:10:09,258 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 13:10:09] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 13:31:35,101 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-09 13:31:35,101 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-09 13:31:54,687 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-09 13:31:54,690 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:31:54,693 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:31:54,694 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:31:54,694 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-09 13:31:54,695 : INFO : data_ingestion : The file is already exists of size :]
+[2023-12-09 13:31:58,648 : INFO : data_ingestion : file has been successfully exxtracted .]
+[2023-12-09 13:32:00,804 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-09 13:32:00,804 : INFO : main : ***********************]
+[2023-12-09 13:32:00,804 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-09 13:32:00,807 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:32:00,808 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:32:00,808 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:32:00,809 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-09 13:32:01,577 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-09 13:32:02,429 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-09 13:32:02,818 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-09 13:32:02,959 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-09 13:32:02,959 : INFO : main : ******************]
+[2023-12-09 13:32:02,960 : INFO : main : >>>>>>>> stage Training started <<<<<<<]
+[2023-12-09 13:32:02,962 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:32:02,963 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:32:02,964 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:32:02,964 : INFO : common : created directory at: \artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-09 13:32:02,964 : INFO : common : created directory at: \artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-09 13:32:02,964 : INFO : common : created directory at: artifacts\training]
+[2023-12-09 13:37:48,437 : INFO : main : >>>>>>>> stage Training completed <<<<<<<<<<<<<<
+
+x========x]
+[2023-12-09 13:38:02,175 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-09 13:38:02,178 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:38:02,179 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:38:02,180 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:38:02,180 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-09 13:38:02,180 : INFO : data_ingestion : The file is already exists of size :]
+[2023-12-09 13:38:03,265 : INFO : data_ingestion : there is some error while extracting the files]
+[2023-12-09 13:38:14,163 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-09 13:38:14,166 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:38:14,167 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:38:14,167 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:38:14,167 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-09 13:38:14,167 : INFO : data_ingestion : The file is already exists of size :]
+[2023-12-09 13:38:17,372 : INFO : data_ingestion : file has been successfully exxtracted .]
+[2023-12-09 13:38:19,131 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-09 13:38:19,131 : INFO : main : ***********************]
+[2023-12-09 13:38:19,131 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-09 13:38:19,134 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:38:19,136 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:38:19,136 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:38:19,136 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-09 13:38:19,876 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-09 13:38:20,706 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-09 13:38:21,114 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-09 13:38:21,252 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-09 13:38:21,253 : INFO : main : ******************]
+[2023-12-09 13:38:21,253 : INFO : main : >>>>>>>> stage Training started <<<<<<<]
+[2023-12-09 13:38:21,255 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:38:21,256 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:38:21,257 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:38:21,257 : INFO : common : created directory at: \artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-09 13:38:21,257 : INFO : common : created directory at: \artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-09 13:38:21,257 : INFO : common : created directory at: artifacts\training]
+[2023-12-09 13:39:40,278 : ERROR : main : Target is multiclass but average='binary'. Please choose another average setting, one of [None, 'micro', 'macro', 'weighted'].]
+Traceback (most recent call last):
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\main.py", line 37, in <module>
+    model_trainer.main()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\stage_03_training.py", line 25, in main
+    training.train(
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\components\training.py", line 111, in train
+    self.model.fit(
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\components\training.py", line 30, in on_epoch_end
+    precision = precision_score(y_true, y_pred)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\sklearn\utils\_param_validation.py", line 214, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\sklearn\metrics\_classification.py", line 2131, in precision_score
+    p, _, _, _ = precision_recall_fscore_support(
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\sklearn\utils\_param_validation.py", line 187, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\sklearn\metrics\_classification.py", line 1724, in precision_recall_fscore_support
+    labels = _check_set_wise_labels(y_true, y_pred, average, labels, pos_label)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\sklearn\metrics\_classification.py", line 1518, in _check_set_wise_labels
+    raise ValueError(
+ValueError: Target is multiclass but average='binary'. Please choose another average setting, one of [None, 'micro', 'macro', 'weighted'].
+[2023-12-09 13:43:16,497 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-09 13:43:16,500 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:43:16,501 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:43:16,502 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:43:16,502 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-09 13:43:16,502 : INFO : data_ingestion : The file is already exists of size :]
+[2023-12-09 13:43:19,698 : INFO : data_ingestion : file has been successfully exxtracted .]
+[2023-12-09 13:43:21,670 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-09 13:43:21,671 : INFO : main : ***********************]
+[2023-12-09 13:43:21,671 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-09 13:43:21,673 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:43:21,674 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:43:21,674 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:43:21,674 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-09 13:43:22,429 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-09 13:43:23,227 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-09 13:43:23,630 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-09 13:43:23,789 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-09 13:43:23,789 : INFO : main : ******************]
+[2023-12-09 13:43:23,789 : INFO : main : >>>>>>>> stage Training started <<<<<<<]
+[2023-12-09 13:43:23,791 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-09 13:43:23,792 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-09 13:43:23,793 : INFO : common : created directory at: artifacts]
+[2023-12-09 13:43:23,793 : INFO : common : created directory at: \artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-09 13:43:23,793 : INFO : common : created directory at: \artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-09 13:43:23,794 : INFO : common : created directory at: artifacts\training]
+[2023-12-09 13:49:11,385 : INFO : main : >>>>>>>> stage Training completed <<<<<<<<<<<<<<
+
+x========x]
+[2023-12-09 13:49:46,572 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-09 13:49:46,573 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-09 15:12:25,073 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-09 15:12:25,073 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-09 15:12:38,477 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:12:38] "GET / HTTP/1.1" 200 -]
+[2023-12-09 15:12:53,165 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:12:53] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 15:13:07,002 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:13:07] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 15:13:22,706 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:13:22] "POST /predict HTTP/1.1" 200 -]
+[2023-12-09 15:14:54,012 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-09 15:14:54,012 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-09 15:15:07,357 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 23, in predict
+    test_image = image.img_to_array(test_image)
+UnboundLocalError: local variable 'test_image' referenced before assignment
+[2023-12-09 15:15:07,360 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:15:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-09 15:15:50,830 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-09 15:15:50,830 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-09 15:15:57,676 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:15:57] "GET / HTTP/1.1" 200 -]
+[2023-12-09 15:16:04,202 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 23, in predict
+    test_image = image.img_to_array(imagename)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\image_utils.py", line 324, in img_to_array
+    x = np.asarray(img, dtype=dtype)
+ValueError: could not convert string to float: 'inputImage.jpg'
+[2023-12-09 15:16:04,205 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:16:04] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-09 15:17:01,196 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-09 15:17:01,197 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-09 15:17:07,242 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:17:07] "GET / HTTP/1.1" 200 -]
+[2023-12-09 15:17:13,774 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 26, in predict
+    test_image=test_image.reshape((224,224))
+ValueError: cannot reshape array of size 150528 into shape (224,224)
+[2023-12-09 15:17:13,775 : INFO : _internal : 127.0.0.1 - - [09/Dec/2023 15:17:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]

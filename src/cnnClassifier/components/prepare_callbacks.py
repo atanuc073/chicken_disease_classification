@@ -4,9 +4,12 @@ from cnnClassifier.entity.config_entity import PrepareCallbacksConfig
 import tensorflow as tf
 
 
+
+
 class PrepareCallback:
     def __init__(self,config:PrepareCallbacksConfig):
         self.config=config
+
 
     @property
     def _create_tb_callbacks(self):
@@ -29,3 +32,5 @@ class PrepareCallback:
             self._create_tb_callbacks,
             self._create_ckpt_callbacks
         ]
+    
+
