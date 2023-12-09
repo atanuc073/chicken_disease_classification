@@ -491,3 +491,367 @@ X=================X]
 [2023-12-03 18:47:42,457 : INFO : main : >>>>>>>> stage Training completed <<<<<<<<<<<<<<
 
 x========x]
+[2023-12-07 20:29:56,217 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 20:29:56,219 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 20:31:00,395 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:31:00] "GET / HTTP/1.1" 200 -]
+[2023-12-07 20:31:38,833 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 18, in predict
+    result=np.argmax(model.predict(test_image),axis=1)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\atanu\AppData\Local\Temp\__autograph_generated_file_a_yt_90.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2041, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2027, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2015, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 1983, in predict_step
+        return self(x, training=False)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\input_spec.py", line 295, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+
+[2023-12-07 20:31:38,836 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:31:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-07 20:35:53,466 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 20:35:53,466 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 20:36:01,473 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:36:01] "GET / HTTP/1.1" 200 -]
+[2023-12-07 20:36:10,605 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 19, in predict
+    result=np.argmax(model.predict(test_image),axis=1)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\atanu\AppData\Local\Temp\__autograph_generated_fileqm9b_w_a.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2041, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2027, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2015, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 1983, in predict_step
+        return self(x, training=False)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\input_spec.py", line 295, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+
+[2023-12-07 20:36:10,607 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:36:10] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-07 20:36:24,326 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:36:24] "GET / HTTP/1.1" 200 -]
+[2023-12-07 20:49:00,925 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 20:49:00,926 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 20:49:06,536 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:49:06] "GET / HTTP/1.1" 200 -]
+[2023-12-07 20:49:21,529 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 18, in predict
+    print(test_image.shape)
+AttributeError: 'JpegImageFile' object has no attribute 'shape'
+[2023-12-07 20:49:21,531 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:49:21] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-07 20:51:38,614 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 20:51:38,615 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 20:51:43,162 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:51:43] "GET / HTTP/1.1" 200 -]
+[2023-12-07 20:51:52,410 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 25, in predict
+    test_image=image.load_img(imagename,target_size=(224,224))
+AttributeError: 'JpegImageFile' object has no attribute 'load_img'
+[2023-12-07 20:51:52,412 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:51:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-07 20:53:15,010 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 20:53:15,010 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 20:53:52,270 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:53:52] "GET / HTTP/1.1" 200 -]
+[2023-12-07 20:54:06,129 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 28, in predict
+    result=np.argmax(model.predict(test_image),axis=1)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\atanu\AppData\Local\Temp\__autograph_generated_filedortw6cm.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2041, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2027, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2015, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 1983, in predict_step
+        return self(x, training=False)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\input_spec.py", line 295, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+
+[2023-12-07 20:54:06,132 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:54:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-07 20:55:05,204 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 20:55:05,204 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 20:55:06,386 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:55:06] "GET / HTTP/1.1" 200 -]
+[2023-12-07 20:55:06,824 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:55:06] "GET / HTTP/1.1" 200 -]
+[2023-12-07 20:55:13,573 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 37, in predictionRoute
+    result=clApp.classifier.predict()
+  File "c:\users\atanu\desktop\my_work\mlops\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 30, in predict
+    result=np.argmax(model.predict(test_image),axis=1)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\atanu\AppData\Local\Temp\__autograph_generated_file63a21md8.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2041, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2027, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 2015, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\training.py", line 1983, in predict_step
+        return self(x, training=False)
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\keras\engine\input_spec.py", line 295, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+
+[2023-12-07 20:55:13,575 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:55:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-07 20:56:09,923 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 20:56:09] "GET / HTTP/1.1" 200 -]
+[2023-12-07 21:03:07,574 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 21:03:07,574 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 21:03:10,984 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:03:10] "GET / HTTP/1.1" 200 -]
+[2023-12-07 21:03:25,502 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 38, in predictionRoute
+    return jsonify(result)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\json\provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\json\provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\json\provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ndarray is not JSON serializable
+[2023-12-07 21:03:25,506 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:03:25] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-07 21:05:27,019 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:05:27] "GET / HTTP/1.1" 200 -]
+[2023-12-07 21:05:33,714 : ERROR : app : Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\atanu\Desktop\MY_WORK\mlops\chicken_disease_classification\app.py", line 38, in predictionRoute
+    return jsonify(result)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\json\provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\json\provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\atanu\anaconda3\envs\chicken\lib\site-packages\flask\json\provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ndarray is not JSON serializable
+[2023-12-07 21:05:33,716 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:05:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-07 21:07:41,296 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:07:41] "GET / HTTP/1.1" 200 -]
+[2023-12-07 21:07:55,447 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 21:07:55,447 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 21:08:11,344 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:08:11] "POST /predict HTTP/1.1" 200 -]
+[2023-12-07 21:11:38,960 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:11:38] "GET / HTTP/1.1" 200 -]
+[2023-12-07 21:11:45,494 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:11:45] "POST /predict HTTP/1.1" 200 -]
+[2023-12-07 21:11:58,625 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:11:58] "POST /predict HTTP/1.1" 200 -]
+[2023-12-07 21:12:30,935 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:12:30] "POST /predict HTTP/1.1" 200 -]
+[2023-12-07 21:12:45,019 : WARNING : def_function : 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021C4065B700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-07 21:12:45,147 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:12:45] "POST /predict HTTP/1.1" 200 -]
+[2023-12-07 21:15:58,128 : INFO : _internal : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2023-12-07 21:15:58,129 : INFO : _internal : [33mPress CTRL+C to quit[0m]
+[2023-12-07 21:16:14,526 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:16:14] "POST /predict HTTP/1.1" 200 -]
+[2023-12-07 21:16:26,859 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:16:26] "GET / HTTP/1.1" 200 -]
+[2023-12-07 21:16:42,033 : INFO : _internal : 127.0.0.1 - - [07/Dec/2023 21:16:42] "POST /predict HTTP/1.1" 200 -]
+[2023-12-07 21:19:21,677 : INFO : main : >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-07 21:19:21,679 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-07 21:19:21,681 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-07 21:19:21,682 : INFO : common : created directory at: artifacts]
+[2023-12-07 21:19:21,682 : INFO : common : created directory at: artifacts/data_ingestion]
+[2023-12-07 21:19:21,683 : INFO : data_ingestion : The file is already exists of size :]
+[2023-12-07 21:19:25,539 : INFO : data_ingestion : file has been successfully exxtracted .]
+[2023-12-07 21:19:27,941 : INFO : main : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-07 21:19:27,941 : INFO : main : ***********************]
+[2023-12-07 21:19:27,941 : INFO : main : >>>>>>>>>>> Stage Prepare base model started <<<<<<<<<<<]
+[2023-12-07 21:19:27,943 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-07 21:19:27,944 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-07 21:19:27,945 : INFO : common : created directory at: artifacts]
+[2023-12-07 21:19:27,945 : INFO : common : created directory at: artifacts/prepare_base_model]
+[2023-12-07 21:19:28,675 : WARNING : saving_utils : Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-07 21:19:29,502 : WARNING : save : Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2023-12-07 21:19:29,881 : INFO : builder_impl : Assets written to: artifacts\prepare_base_model\assets]
+[2023-12-07 21:19:30,032 : INFO : main : >>>>>>>>>>>> stage Prepare base model ,completed <<<<<<<<<<
+
+X=================X]
+[2023-12-07 21:19:30,032 : INFO : main : ******************]
+[2023-12-07 21:19:30,032 : INFO : main : >>>>>>>> stage Training started <<<<<<<]
+[2023-12-07 21:19:30,035 : INFO : common : yaml file: config\config.yaml loaded successfully]
+[2023-12-07 21:19:30,036 : INFO : common : yaml file: params.yaml loaded successfully]
+[2023-12-07 21:19:30,036 : INFO : common : created directory at: artifacts]
+[2023-12-07 21:19:30,036 : INFO : common : created directory at: \artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-07 21:19:30,037 : INFO : common : created directory at: \artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-07 21:19:30,037 : INFO : common : created directory at: artifacts\training]
+[2023-12-07 21:24:02,345 : INFO : main : >>>>>>>> stage Training completed <<<<<<<<<<<<<<
+
+x========x]
